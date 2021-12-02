@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.scss'
+import './header.scss'
 import LogoAcessaBr from '../../images/logo-acessabr.svg'
 import LogoEbac from '../../images/logo-ebac.svg'
 
