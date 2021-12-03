@@ -16,8 +16,7 @@
     }
     &__content{
         padding: 1.6rem;
-       
-
+        
         h3{
             font-weight: bold;
             font-size: 2.4rem;
@@ -35,7 +34,7 @@
        grid-template-columns: repeat(5, 3rem);
        grid-gap: .5rem;
        margin: 1rem auto;
-       list-style: none;
+       list-style-type: none;
        
         &__item{
             background-color: var(--blue);

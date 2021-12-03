@@ -1,18 +1,26 @@
-import React,{useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import './style.scss'
 import imageDestack from '../../images/imagem-destaque.png'
 import Pills from '../../components/Pills'
+import { useParams } from 'react-router';
 
 const Places = [
     'Praça', 'Parque', 'Igreja', 'Hotel', 'Restaurante', 'zoologico', 'Farmacia', 'Loja', 'Aquário'
 ]
 
-const SaoPaulo = (props) => {
-    const [selectedPill,setSelectedPill]=useState('')
+const Home = () => {
+    const [city, state]=useParams
+    const [selectedPill, setSelectedPill] = useState('')
+    const {setCity, setState}=useContext(LocationContext)
+useEffect(()=>{
+    setCity(city)
+    setState(state)
+},[city,state])
+
     return (
         <main id="main-content" className="home__container">
             <div className="home__col">
-                <h1 className="home__title">{props.city} para Todos</h1>
+                <h1 className="home__title">{city} para Todos</h1>
                 <div className="home__image home__image--destack hide-desktop">
                     <img src={imageDestack} alt="imagem de destaque cadeirante" />
                 </div>
@@ -21,13 +29,13 @@ const SaoPaulo = (props) => {
                 </p>
                 <div className="home__pills">
                     {
-                    Places.map((item)=>(
-                        <Pills 
-                        local={item}
-                         selected={selectedPill===item}
-                        onClick={()=>setSelectedPill(item)}/>
+                        Places.map((item) => (
+                            <Pills
+                                local={item}
+                                selected={selectedPill === item}
+                                onClick={() => setSelectedPill(item)} />
 
-                    ))
+                        ))
                     }
                 </div>
             </div>
@@ -40,4 +48,4 @@ const SaoPaulo = (props) => {
     )
 }
 
-export default SaoPaulo;
+export default Home;

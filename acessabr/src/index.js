@@ -8,18 +8,16 @@ import Footer from './components/Footer'
 import Places from './components/Places';
 import Routes from 'react-router'
 
-const CONFIG={
-  state:"Sp",
-  city:'São Paulo'
-}
+
 
 ReactDOM.render(
   <div className="main__wrapper">
     <div className="main__container">
-      <Header  city={CONFIG.city} state={CONFIG.state}/>
-      <Routes city={CONFIG.city} state={CONFIG.state}/>
+      <BrowserRouter>
+      <Routes />
       <Places/>
       <Curator/>
+      </BrowserRouter>
     </div>
     <Footer/>
 
