@@ -7,7 +7,7 @@ const Places = [
     'Praça', 'Parque', 'Igreja', 'Hotel', 'Restaurante', 'zoologico', 'Farmacia', 'Loja', 'Aquário'
 ]
 
-const Home = (props) => {
+const SaoPaulo = (props) => {
     const [selectedPill,setSelectedPill]=useState('')
     return (
         <main id="main-content" className="home__container">
@@ -40,4 +40,4 @@ const Home = (props) => {
     )
 }
 
-export default Home;
+export default SaoPaulo;
