@@ -2,11 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './styles/global.scss'
 import Header from './components/Header'
-import SaoPaulo from './pages/Sao-Paulo'
+import Home from './pages/Home'
 import Curator from './components/Curator';
 import Footer from './components/Footer'
 import Places from './components/Places';
-import Routes from 'react-router'
+import Routes from './routes'
 
 
 

@@ -1,0 +1,78 @@
+{
+    "places": [
+        {
+            "id": 1,
+            "name": "Museu da Lingua Portuguesa",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+            "id": 2,
+            "name": "Mercado municipal",
+            "image":"/places/mercado-municipal.png",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+            "id": 3,
+            "name": "Auditorio Ibirapuera",
+            "image":"/places/auditorio-ibirapuera.png",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+            "id": 4,
+            "name": "Museu de artes de São Paulo",
+            "image":"/places/mercado-municipal.png",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "location": {
+                "lat": "10234",
+                "long": "4321"
+            },
+            "facilities": [
+                {
+                    "item": 1,
+                    "status": true
+                },
+                {
+                    "item": 2,
+                    "status": false
+                },
+                {
+                    "item": 3,
+                    "status": true
+                },
+                {
+                    "item": 4,
+                    "status": true
+                },
+                {
+                    "item": 5,
+                    "status": true
+                },
+                {
+                    "item": 6,
+                    "status": true
+                },
+                {
+                    "item": 7,
+                    "status": true
+                },
+                {
+                    "item": 8,
+                    "status": true
+                },
+                {
+                    "item": 9,
+                    "status": true
+                },
+                {
+                    "item": 10,
+                    "status": true
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Museu de artes contemporâneas",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        }
+    ]
+}
