@@ -4,9 +4,7 @@ import { useState } from 'react'
 import Home from '../pages/Home'
 import Header from '../components/Header'
 
-import { LocationContext } from '../context/locationContext.js'
-
-
+import {LocationContext} from '../context/LocationContext'
 
 
 const Routes = props => {
